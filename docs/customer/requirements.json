@@ -1,0 +1,150 @@
+{
+  "currentVersion": "",
+  "status": "draft",
+
+  "versions": [],
+
+  "current": {
+    "salesInput": {
+      "salesPerson": "",
+      "lastUpdated": "",
+      "overallAssessment": {
+        "customerIntent": "",
+        "projectUrgency": "",
+        "budgetSituation": "",
+        "competitionStatus": "",
+        "winProbability": "",
+        "keyObstacles": [],
+        "confidenceLevel": ""
+      },
+      "keyPersons": [],
+      "realNeeds": {
+        "explicitNeeds": [],
+        "implicitNeeds": [],
+        "suspectedNeeds": [],
+        "needsNotMentioned": []
+      },
+      "decisionFactors": {
+        "primaryFactor": "",
+        "secondaryFactors": [],
+        "dealBreakers": []
+      },
+      "notes": "",
+      "concerns": [],
+      "suggestions": []
+    },
+
+    "sources": {
+      "meetings": [],
+      "documents": [],
+      "communications": [],
+      "observations": []
+    },
+
+    "background": {
+      "businessContext": "",
+      "currentChallenges": [],
+      "triggerEvent": "",
+      "currentSystems": [],
+      "currentProcess": {
+        "overview": "",
+        "steps": [],
+        "bottlenecks": []
+      },
+      "painPoints": [],
+      "expectedOutcomes": []
+    },
+
+    "needs": [],
+
+    "users": [],
+
+    "scope": {
+      "inScope": [],
+      "outOfScope": [],
+      "futureScope": [],
+      "phases": [],
+      "priorityMatrix": []
+    },
+
+    "constraints": {
+      "budget": {
+        "total": "",
+        "breakdown": [],
+        "paymentTerms": "",
+        "flexibility": ""
+      },
+      "timeline": {
+        "expectedStart": "",
+        "expectedGoLive": "",
+        "hardDeadline": "",
+        "reason": "",
+        "flexibility": ""
+      },
+      "resources": {
+        "clientTeam": [],
+        "availability": "",
+        "constraints": []
+      },
+      "technical": {
+        "existingInfrastructure": [],
+        "mandatoryTech": [],
+        "prohibitedTech": [],
+        "networkConstraints": [],
+        "deploymentConstraints": []
+      },
+      "organizational": {
+        "approvalProcess": "",
+        "changeManagement": "",
+        "vendorPolicies": [],
+        "complianceRequirements": []
+      }
+    },
+
+    "successCriteria": {
+      "businessCriteria": [],
+      "technicalCriteria": [],
+      "userCriteria": [],
+      "projectCriteria": [],
+      "roiExpectation": {
+        "expectedBenefits": [],
+        "paybackPeriod": "",
+        "quantifiableMetrics": []
+      }
+    },
+
+    "risksAndAssumptions": {
+      "risks": [],
+      "assumptions": [],
+      "dependencies": []
+    },
+
+    "solutionDirection": {
+      "overallApproach": "",
+      "recommendedApproach": {
+        "type": "",
+        "rationale": "",
+        "alternatives": []
+      },
+      "technicalDirection": {
+        "architecture": "",
+        "deployment": "",
+        "techStack": []
+      },
+      "implementationStrategy": {
+        "approach": "",
+        "pilotScope": "",
+        "rolloutPlan": ""
+      },
+      "nextSteps": []
+    },
+
+    "pendingQuestions": [],
+
+    "completionRate": {
+      "overall": 0,
+      "byCategory": {},
+      "blockers": []
+    }
+  }
+}

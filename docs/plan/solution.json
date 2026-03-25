@@ -1,0 +1,37 @@
+{
+  "currentScene": "normal",
+  "scenes": [
+    {
+      "id": "normal",
+      "name": "普通方案",
+      "icon": "FileText",
+      "description": "标准解决方案模板",
+      "currentVersion": "",
+      "versions": []
+    },
+    {
+      "id": "bidding",
+      "name": "招标方案",
+      "icon": "FileText",
+      "description": "响应招标需求的投标技术方案",
+      "currentVersion": "",
+      "versions": []
+    },
+    {
+      "id": "leadership",
+      "name": "领导汇报",
+      "icon": "Presentation",
+      "description": "向领导汇报项目价值与投资回报",
+      "currentVersion": "",
+      "versions": []
+    },
+    {
+      "id": "customer",
+      "name": "客户宣讲",
+      "icon": "Users",
+      "description": "客户现场宣讲展示方案优势",
+      "currentVersion": "",
+      "versions": []
+    }
+  ]
+}

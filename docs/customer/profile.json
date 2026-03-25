@@ -1,0 +1,95 @@
+{
+  "profile": {
+    "companyName": "",
+    "shortName": "",
+    "isListed": false,
+    "stockCode": "",
+    "website": "",
+    "industry": "",
+    "subIndustry": "",
+    "scale": "",
+    "mainBusiness": "",
+    "products": [],
+    "targetCustomers": [],
+    "businessModel": "",
+    "rating": "",
+    "tags": [],
+
+    "summary": "",
+
+    "registration": {
+      "foundedDate": "",
+      "registeredCapital": "",
+      "paidInCapital": "",
+      "ownershipType": "",
+      "branches": {
+        "count": "",
+        "locations": []
+      },
+      "legalRisks": "",
+      "operatingAnomalies": "",
+      "penalties": "",
+      "summary": ""
+    },
+
+    "policyAnalysis": {
+      "isSpecialized": false,
+      "isDigitalTransformation": false,
+      "isESG": false,
+      "isHighTech": false,
+      "policySupportLevel": "",
+      "leverageStrategy": ""
+    },
+
+    "timing": {
+      "currentPhase": "",
+      "evidence": "",
+      "entryStrategy": ""
+    },
+
+    "creditRisk": {
+      "legalRisk": "",
+      "operationalRisk": "",
+      "creditRating": "",
+      "warnings": [],
+      "salesAdvice": ""
+    },
+
+    "organization": {
+      "type": "",
+      "decisionChain": "",
+      "keyPersons": [],
+      "salesStrategy": ""
+    },
+
+    "strategy": {
+      "phase": "",
+      "growthStage": "",
+      "competitivePosition": "",
+      "digitalMaturity": "",
+      "analysisPath": "",
+      "informationQuality": "",
+      "expansionSignals": [],
+      "contractionSignals": [],
+      "riskSignals": []
+    },
+
+    "techStack": {
+      "current": [],
+      "inferred": [],
+      "maturity": "",
+      "direction": ""
+    },
+
+    "keyMetrics": [],
+
+    "metadata": {
+      "createdAt": "",
+      "updatedAt": "",
+      "createdBy": "",
+      "version": "",
+      "sources": [],
+      "confidence": 0
+    }
+  }
+}
