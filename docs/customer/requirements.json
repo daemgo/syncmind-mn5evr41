@@ -10,12 +10,12 @@
       "lastUpdated": "2026-03-25",
       "overallAssessment": {
         "customerIntent": "数字化转型深化期，明确表达EAM系统建设需求",
-        "projectUrgency": "待确认",
-        "budgetSituation": "待确认",
-        "competitionStatus": "未知",
-        "winProbability": "待评估",
-        "keyObstacles": ["需求范围待明确", "竞对情况未掌握"],
-        "confidenceLevel": "低"
+        "projectUrgency": "正常：26年年底上线，时间充裕",
+        "budgetSituation": "已确认：100万（已审批）",
+        "competitionStatus": "有竞对：在对比SaaS产品与定制开发",
+        "winProbability": "中高：定制开发是我们的机会",
+        "keyObstacles": ["需快速出方案抢占先机", "SaaS产品竞对情况待了解"],
+        "confidenceLevel": "中"
       },
       "keyPersons": [],
       "realNeeds": {
@@ -37,7 +37,10 @@
     "sources": {
       "meetings": [],
       "documents": [],
-      "communications": ["2026-03-25: 销售反馈客户有EAM系统需求"],
+      "communications": [
+        "2026-03-25: 销售反馈客户有EAM系统需求",
+        "2026-03-25: 客户反馈预算100万（已审批），要求26年年底上线，在对比SaaS产品与定制开发"
+      ],
       "observations": []
     },
 
@@ -217,17 +220,17 @@
 
     "constraints": {
       "budget": {
-        "total": "",
+        "total": "100万（已审批）",
         "breakdown": [],
         "paymentTerms": "",
-        "flexibility": "待确认"
+        "flexibility": "已审批，资金到位"
       },
       "timeline": {
-        "expectedStart": "",
-        "expectedGoLive": "",
-        "hardDeadline": "",
-        "reason": "",
-        "flexibility": "待确认"
+        "expectedStart": "待确认",
+        "expectedGoLive": "2026年12月31日",
+        "hardDeadline": "2026年12月31日",
+        "reason": "客户要求26年年底之前上线",
+        "flexibility": "正常"
       },
       "resources": {
         "clientTeam": ["待确认"],
@@ -296,13 +299,13 @@
     },
 
     "solutionDirection": {
-      "overallApproach": "采用成熟EAM产品+适度定制，优先落地基础功能，为后续智能化升级预留接口",
+      "overallApproach": "客户在对比SaaS与定制开发，定制开发是我们的机会，应快速输出针对性方案",
       "recommendedApproach": {
-        "type": "成熟商业软件+定制开发",
-        "rationale": "降低实施风险，加快上线周期，依托成熟产品最佳实践",
+        "type": "定制开发（推荐）",
+        "rationale": "客户对定制开发持开放态度，可针对其装备制造业务特点深度定制，与西门子系统深度集成",
         "alternatives": [
-          "完全自主开发（周期长，风险高）",
-          "SaaS订阅（需评估数据安全与网络要求）"
+          "成熟商业软件+二次开发（备选）",
+          "SaaS订阅（客户在评估，非我方优势）"
         ]
       },
       "technicalDirection": {
@@ -316,42 +319,41 @@
         "rolloutPlan": "试点→评估→全面推广"
       },
       "nextSteps": [
-        "确认项目预算和时间节点",
+        "尽快输出EAM定制开发方案，抢占先机",
         "明确项目决策链和关键干系人",
-        "收集详细设备清单和技术资料",
-        "了解竞对情况"
+        "了解客户在评估的SaaS产品情况，制定差异化策略",
+        "收集详细设备清单和技术资料"
       ]
     },
 
     "pendingQuestions": [
-      { "id": "Q001", "question": "项目预算范围是多少？", "priority": "高", "category": "商务" },
-      { "id": "Q002", "question": "期望上线时间节点？", "priority": "高", "category": "时间" },
       { "id": "Q003", "question": "项目决策人和关键干系人是谁？", "priority": "高", "category": "决策" },
-      { "id": "Q004", "question": "是否有竞对在跟进？进展如何？", "priority": "高", "category": "竞对" },
+      { "id": "Q004", "question": "客户在评估哪些SaaS产品？进展如何？", "priority": "高", "category": "竞对" },
       { "id": "Q005", "question": "设备数量和类型分布？", "priority": "中", "category": "技术" },
       { "id": "Q006", "question": "是否有现成的设备台账数据？", "priority": "中", "category": "数据" },
       { "id": "Q007", "question": "与西门子系统的对接要求？", "priority": "中", "category": "技术" },
-      { "id": "Q008", "question": "是否需要移动端？支持哪些平台？", "priority": "低", "category": "功能" }
+      { "id": "Q008", "question": "是否需要移动端？支持哪些平台？", "priority": "低", "category": "功能" },
+      { "id": "Q009", "question": "付款方式和节点？", "priority": "中", "category": "商务" }
     ],
 
     "completionRate": {
-      "overall": 30,
+      "overall": 50,
       "byCategory": {
         "业务背景": 60,
         "功能需求": 40,
         "用户角色": 50,
         "项目范围": 50,
-        "约束条件": 10,
+        "约束条件": 60,
         "成功标准": 30,
-        "商务条件": 0
+        "商务条件": 50
       },
-      "blockers": ["预算未确认", "时间未确认", "决策人未明确", "竞对情况未知"]
+      "blockers": ["决策人未明确", "竞对SaaS产品情况未知"]
     }
   },
 
   "metadata": {
     "createdAt": "2026-03-25T00:00:00.000Z",
-    "updatedAt": "2026-03-25T00:00:00.000Z",
+    "updatedAt": "2026-03-25T10:30:00.000Z",
     "createdBy": "AI",
     "version": "1.0"
   }

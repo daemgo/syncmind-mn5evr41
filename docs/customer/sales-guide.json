@@ -1,47 +1,69 @@
 {
   "salesGuide": {
     "insights": {
-      "risks": [],
+      "risks": [
+        "SaaS产品标准化程度高，实施周期短，可能吸引客户",
+        "客户对SaaS产品了解不足，可能被低价吸引"
+      ],
       "probability": {
-        "value": 0,
-        "level": "",
-        "factors": []
+        "value": 65,
+        "level": "中高",
+        "factors": ["预算已审批，资金到位", "定制开发符合客户需求特点", "时间充裕"]
       },
-      "opportunities": []
+      "opportunities": [
+        "客户对定制开发持开放态度，认可差异化价值",
+        "装备制造行业EAM需求特殊，SaaS难以完全满足",
+        "100万预算支持定制开发",
+        "与西门子系统深度集成是SaaS痛点"
+      ]
     },
 
     "timing": {
-      "timingStage": "",
-      "analysisBasis": [],
-      "entryStrategy": "",
-      "urgency": ""
+      "timingStage": "方案评估期：客户正在对比SaaS与定制开发",
+      "analysisBasis": ["预算已审批", "26年年底上线，时间充裕", "正在筛选供应商"],
+      "entryStrategy": "快速输出针对性方案，强调定制优势：行业贴合、深度集成、数据安全",
+      "urgency": "中高：需尽快出方案抢占先机"
     },
 
-    "competitors": [],
+    "competitors": [
+      {
+        "name": "SaaS产品（具体品牌待确认）",
+        "type": "标准化SaaS",
+        "strengths": ["实施周期短", "功能标准化", "订阅制弹性付费"],
+        "weaknesses": ["难以深度适配装备制造", "与西门子系统集成困难", "数据安全顾虑"],
+        "status": "客户正在评估",
+        "ourDifferentiation": "行业定制+深度集成+私有化部署"
+      }
+    ],
 
     "decisionChain": {
       "decisionMakers": [],
       "influencers": [],
       "blockers": [],
-      "decisionProcess": "",
+      "decisionProcess": "技术部门提出需求→生产/质量部门会签→采购部门评估→高层审批决策[档案推演]",
       "approvalPath": [],
-      "timeline": ""
+      "timeline": "预算已审批，方案阶段"
     },
 
-    "nextActions": [],
+    "nextActions": [
+      { "priority": "高", "action": "尽快输出EAM定制开发方案", "owner": "方案", "deadline": "2026-04-05" },
+      { "priority": "高", "action": "了解客户评估的SaaS产品具体品牌", "owner": "销售", "deadline": "2026-04-01" },
+      { "priority": "中", "action": "明确项目决策人和关键干系人", "owner": "销售", "deadline": "2026-04-05" },
+      { "priority": "中", "action": "收集设备清单和技术资料", "owner": "售前", "deadline": "2026-04-10" }
+    ],
 
     "tracking": {
-      "coverageRate": 0,
-      "coveredCount": 0,
-      "totalCount": 0,
-      "categories": []
+      "coverageRate": 30,
+      "coveredCount": 3,
+      "totalCount": 10,
+      "categories": ["timing", "competitors", "nextActions"]
     },
 
     "followups": [],
 
     "metadata": {
       "generatedAt": null,
-      "updatedAt": null,
+      "updatedAt": "2026-03-25T10:30:00.000Z",
       "version": "1.0"
     }
   }
