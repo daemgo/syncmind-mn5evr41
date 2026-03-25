@@ -1,5 +1,129 @@
 {
   "salesGuide": {
+    "timing": {
+      "timingStage": "数字化深化扩张期：DCMM认证后数据管理意识觉醒，2025-2026校招扩招配合业务扩张",
+      "entryStrategy": "趁DCMM认证后数据管理意识觉醒期切入，强调设备数据治理与智能制造升级的契合度，从恒温装配、整机联机等关键设备维护痛点切入，展示与西门子系统深度集成的技术优势",
+      "urgency": "中高：客户已启动方案评估，在对比SaaS与定制开发，需尽快输出针对性方案抢占先机"
+    },
+
+    "stageAdvice": {
+      "focus": "快速输出EAM定制开发方案，强调行业定制优势与西门子系统集成能力",
+      "approach": "技术部门切入（总工钟瑞龄），同步接触生产部门（瞿祖训），用试点车间方案降低决策风险",
+      "risks": "SaaS产品可能以标准化、快速实施、低首年费用吸引客户，需强化定制化价值和数据安全诉求"
+    },
+
+    "competitors": [
+      {
+        "name": "SaaS标准化产品（具体品牌待确认）",
+        "threat": "高",
+        "strengths": [
+          "实施周期短，1-2个月即可上线",
+          "功能标准化成熟，系统稳定",
+          "订阅制弹性付费，首年投入较低"
+        ],
+        "weaknesses": [
+          "难以深度适配装备制造业务特点",
+          "与西门子数控系统集成困难，数据采集受限",
+          "数据存储在云端，制造企业有安全顾虑"
+        ],
+        "counterStrategy": "强调装备制造行业的特殊性（恒温装配、整机联机等关键设备），SaaS标准化功能难以覆盖；突出私有化部署的数据安全优势，针对国企背景客户的合规诉求；用西门子系统集成的技术门槛建立壁垒"
+      },
+      {
+        "name": "Excel+人工现状",
+        "threat": "中",
+        "strengths": [
+          "零成本，无需采购",
+          "团队熟悉，无学习门槛",
+          "灵活性高，随意修改"
+        ],
+        "weaknesses": [
+          "数据分散，无法形成统一设备台账",
+          "维修经验难以沉淀传承",
+          "缺乏预警和分析能力"
+        ],
+        "counterStrategy": "用DCMM认证后的数据管理意识做切入，强调'经验知识化'的价值；用设备意外停机的损失量化ROI；以试点先行降低变革阻力"
+      },
+      {
+        "name": "其他定制开发商",
+        "threat": "中",
+        "strengths": [
+          "同样支持定制开发",
+          "价格可能更灵活"
+        ],
+        "weaknesses": [
+          "缺乏装备制造行业经验",
+          "西门子系统集成能力待验证",
+          "项目交付风险较高"
+        ],
+        "counterStrategy": "突出智能制造国家队客户的服务经验；展示西门子集成的技术案例；用试点车间快速交付建立信任"
+      }
+    ],
+
+    "decisionChain": {
+      "decisionMakers": [
+        {
+          "name": "叶又生",
+          "department": "董事长",
+          "reason": "高层审批决策者，对100万预算有最终拍板权[假设待验证]"
+        },
+        {
+          "name": "唐兆庆",
+          "department": "总经理",
+          "reason": "日常经营管理决策，项目推进关键人[假设待验证]"
+        }
+      ],
+      "influencers": [
+        {
+          "name": "钟瑞龄",
+          "department": "总工程师",
+          "reason": "技术把关人，西门子系统集成方案需其认可，DCMM认证主导者，重视数据管理[假设待验证]"
+        },
+        {
+          "name": "瞿祖训",
+          "department": "副总经理（生产）",
+          "reason": "使用部门负责人，设备管理直接影响生产，用户体验关键影响者[假设待验证]"
+        },
+        {
+          "name": "采购部门",
+          "department": "采购部门",
+          "reason": "商务谈判和供应商评估，关注性价比和交付风险[档案推演]"
+        }
+      ],
+      "blockers": []
+    },
+
+    "avoidTopics": [
+      "避免对国企改制背景做过度解读或评论",
+      "避免质疑其DCMM认证或两化融合示范的含金量"
+    ],
+
+    "interviewGuide": {
+      "quickScreening": [
+        {
+          "question": "咱们现在的设备台账主要用什么方式管？Excel还是别的系统？",
+          "purpose": "了解当前信息化程度，判断SaaS竞品渗透情况"
+        },
+        {
+          "question": "这次EAM系统建设，咱们希望优先解决什么问题？是设备台账规范化，还是维修流程标准化，还是跟西门子系统的数据打通？",
+          "purpose": "明确客户核心诉求和优先级，判断定制化需求强度"
+        },
+        {
+          "question": "项目大概什么时候需要立项？时间上有什么硬性要求吗？",
+          "purpose": "确认项目紧急程度和决策时间窗口"
+        }
+      ],
+      "closingQuestions": [
+        {
+          "question": "今天咱们聊下来，您觉得咱们这边的定制方案跟您在看的SaaS产品相比，主要差异在哪里？",
+          "purpose": "了解客户对竞品的认知和我们方案的定位"
+        },
+        {
+          "question": "下一步咱们是安排技术对接，还是您这边先内部讨论一下？我这边需要准备什么材料？",
+          "purpose": "明确下一步行动和决策流程"
+        }
+      ]
+    },
+
     "insights": {
       "risks": [
         "SaaS产品标准化程度高，实施周期短，可能吸引客户",
@@ -18,33 +142,6 @@
       ]
     },
 
-    "timing": {
-      "timingStage": "方案评估期：客户正在对比SaaS与定制开发",
-      "analysisBasis": ["预算已审批", "26年年底上线，时间充裕", "正在筛选供应商"],
-      "entryStrategy": "快速输出针对性方案，强调定制优势：行业贴合、深度集成、数据安全",
-      "urgency": "中高：需尽快出方案抢占先机"
-    },
-
-    "competitors": [
-      {
-        "name": "SaaS产品（具体品牌待确认）",
-        "type": "标准化SaaS",
-        "strengths": ["实施周期短", "功能标准化", "订阅制弹性付费"],
-        "weaknesses": ["难以深度适配装备制造", "与西门子系统集成困难", "数据安全顾虑"],
-        "status": "客户正在评估",
-        "ourDifferentiation": "行业定制+深度集成+私有化部署"
-      }
-    ],
-
-    "decisionChain": {
-      "decisionMakers": [],
-      "influencers": [],
-      "blockers": [],
-      "decisionProcess": "技术部门提出需求→生产/质量部门会签→采购部门评估→高层审批决策[档案推演]",
-      "approvalPath": [],
-      "timeline": "预算已审批，方案阶段"
-    },
-
     "nextActions": [
       { "priority": "高", "action": "尽快输出EAM定制开发方案", "owner": "方案", "deadline": "2026-04-05" },
       { "priority": "高", "action": "了解客户评估的SaaS产品具体品牌", "owner": "销售", "deadline": "2026-04-01" },
@@ -53,18 +150,18 @@
     ],
 
     "tracking": {
-      "coverageRate": 30,
-      "coveredCount": 3,
-      "totalCount": 10,
-      "categories": ["timing", "competitors", "nextActions"]
+      "coverageRate": 100,
+      "coveredCount": 8,
+      "totalCount": 8,
+      "categories": ["timing", "stageAdvice", "competitors", "decisionChain", "avoidTopics", "interviewGuide", "insights", "nextActions"]
     },
 
     "followups": [],
 
     "metadata": {
-      "generatedAt": null,
-      "updatedAt": "2026-03-25T10:30:00.000Z",
-      "version": "1.0"
+      "generatedAt": "2026-03-25T12:00:00.000Z",
+      "updatedAt": "2026-03-25T12:00:00.000Z",
+      "version": "2.0"
     }
   }
 }
