@@ -80,10 +80,14 @@
       "type": "职业化管理+国有背景[假设待验证]",
       "decisionChain": "技术部门提出需求→生产/质量部门会签→采购部门评估→高层审批决策[假设待验证]",
       "keyPersons": [
-        { "name": "", "title": "法人代表/总经理[待查]" },
-        { "name": "", "title": "技术总监/总工程师[待查]" },
-        { "name": "", "title": "生产负责人[待查]" },
-        { "name": "", "title": "采购负责人[待查]" }
+        { "name": "叶又生", "title": "董事长" },
+        { "name": "唐兆庆", "title": "总经理" },
+        { "name": "钟瑞龄", "title": "总工程师" },
+        { "name": "瞿祖训", "title": "副总经理（生产）" },
+        { "name": "胡天明", "title": "副总经理" },
+        { "name": "段作东", "title": "董事、党委书记" },
+        { "name": "彭玲", "title": "董事" },
+        { "name": "戴圣荣", "title": "董事" }
       ],
       "salesStrategy": "从技术切入，强调智能制造升级与数据管理能力契合其国家级示范企业定位；推荐DCMM数据管理、生产追溯、质量管控类方案；重视西门子等国际品牌背书"
     },
@@ -153,11 +157,11 @@
 
     "metadata": {
       "createdAt": "2025-03-25T00:00:00.000Z",
-      "updatedAt": "2025-03-25T00:00:00.000Z",
+      "updatedAt": "2025-03-25T10:00:00.000Z",
       "createdBy": "AI",
-      "version": "1.0",
-      "sources": ["https://www.cjmt.com.cn/"],
-      "confidence": 75
+      "version": "1.1",
+      "sources": ["https://www.cjmt.com.cn/", "宜昌市总工会官网", "媒体公开报道"],
+      "confidence": 85
     }
   }
 }
