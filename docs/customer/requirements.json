@@ -1,5 +1,5 @@
 {
-  "currentVersion": "",
+  "currentVersion": "v0.1",
   "status": "draft",
 
   "versions": [],
@@ -7,29 +7,29 @@
   "current": {
     "salesInput": {
       "salesPerson": "",
-      "lastUpdated": "",
+      "lastUpdated": "2026-03-25",
       "overallAssessment": {
-        "customerIntent": "",
-        "projectUrgency": "",
-        "budgetSituation": "",
-        "competitionStatus": "",
-        "winProbability": "",
-        "keyObstacles": [],
-        "confidenceLevel": ""
+        "customerIntent": "数字化转型深化期，明确表达EAM系统建设需求",
+        "projectUrgency": "待确认",
+        "budgetSituation": "待确认",
+        "competitionStatus": "未知",
+        "winProbability": "待评估",
+        "keyObstacles": ["需求范围待明确", "竞对情况未掌握"],
+        "confidenceLevel": "低"
       },
       "keyPersons": [],
       "realNeeds": {
-        "explicitNeeds": [],
-        "implicitNeeds": [],
-        "suspectedNeeds": [],
+        "explicitNeeds": ["EAM企业资产管理系统"],
+        "implicitNeeds": ["设备维护经验知识化", "预测性维护能力提升"],
+        "suspectedNeeds": ["与现有西门子系统集成", "移动端巡检"],
         "needsNotMentioned": []
       },
       "decisionFactors": {
-        "primaryFactor": "",
+        "primaryFactor": "待确认",
         "secondaryFactors": [],
         "dealBreakers": []
       },
-      "notes": "",
+      "notes": "客户处于DCMM认证后的数字化深化期，设备管理是制造企业核心痛点",
       "concerns": [],
       "suggestions": []
     },
@@ -37,34 +37,182 @@
     "sources": {
       "meetings": [],
       "documents": [],
-      "communications": [],
+      "communications": ["2026-03-25: 销售反馈客户有EAM系统需求"],
       "observations": []
     },
 
     "background": {
-      "businessContext": "",
-      "currentChallenges": [],
-      "triggerEvent": "",
-      "currentSystems": [],
+      "businessContext": "长机科技是国内插齿机细分领域第一，专业生产数控齿轮加工机床。拥有恒温装配车间、整机联机等关键设备，设备维护直接影响产品质量和交付周期",
+      "currentChallenges": [
+        "关键设备维护依赖工人经验，缺乏标准化知识沉淀",
+        "预测性维护能力不足，设备故障难以提前预警",
+        "设备台账分散，缺乏统一的资产管理视角"
+      ],
+      "triggerEvent": "数字化深化与智能制造升级期，DCMM认证后数据管理意识觉醒",
+      "currentSystems": ["西门子数控系统"],
       "currentProcess": {
-        "overview": "",
-        "steps": [],
-        "bottlenecks": []
+        "overview": "现有设备维护流程依赖人工经验，巡检、维修记录纸质化或分散存储",
+        "steps": ["设备故障报修", "维修人员响应", "故障处理", "记录填写"],
+        "bottlenecks": ["维修经验难以传承", "备件库存不透明", "预防性维护计划执行困难"]
       },
-      "painPoints": [],
-      "expectedOutcomes": []
+      "painPoints": [
+        { "area": "设备管理", "description": "恒温装配、整机联机等关键设备维护依赖经验，预测性维护能力不足", "severity": "中", "source": "profile推断" }
+      ],
+      "expectedOutcomes": ["建立完整设备台账", "标准化维护流程", "提升设备可用率", "降低意外停机"]
     },
 
-    "needs": [],
+    "needs": [
+      {
+        "id": "N001",
+        "category": "设备台账",
+        "title": "设备全生命周期台账管理",
+        "description": "建立覆盖设备采购、安装、调试、运行、维护、报废的全生命周期台账",
+        "priority": "must-have",
+        "source": "customer-stated",
+        "confidence": "high",
+        "status": "active",
+        "acceptanceCriteria": ["支持设备分类编码", "支持设备技术参数档案", "支持设备位置变动追踪"]
+      },
+      {
+        "id": "N002",
+        "category": "维护管理",
+        "title": "预防性维护计划",
+        "description": "基于设备类型和运行时长，自动生成预防性维护计划，支持周期性工单",
+        "priority": "must-have",
+        "source": "profile-inference",
+        "confidence": "medium",
+        "status": "active",
+        "acceptanceCriteria": ["支持按时间/计量值触发", "支持维护模板复用", "支持工单自动生成"]
+      },
+      {
+        "id": "N003",
+        "category": "维修管理",
+        "title": "维修工单全流程管理",
+        "description": "故障报修、派工、执行、验收、归档的闭环管理",
+        "priority": "must-have",
+        "source": "profile-inference",
+        "confidence": "medium",
+        "status": "active",
+        "acceptanceCriteria": ["支持移动端报修", "支持工单状态追踪", "支持维修知识库沉淀"]
+      },
+      {
+        "id": "N004",
+        "category": "备件管理",
+        "title": "备品备件库存管理",
+        "description": "备件入库、出库、库存预警、采购建议",
+        "priority": "should-have",
+        "source": "profile-inference",
+        "confidence": "medium",
+        "status": "active",
+        "acceptanceCriteria": ["支持备件与设备关联", "支持安全库存预警", "支持消耗统计分析"]
+      },
+      {
+        "id": "N005",
+        "category": "预测性维护",
+        "title": "设备状态监测与预警",
+        "description": "结合物联网数据，实现关键设备状态监控和异常预警",
+        "priority": "should-have",
+        "source": "profile-inference",
+        "confidence": "low",
+        "status": "active",
+        "acceptanceCriteria": ["支持设备运行数据采集", "支持阈值预警", "支持趋势分析"]
+      },
+      {
+        "id": "N006",
+        "category": "系统集成",
+        "title": "与西门子数控系统集成",
+        "description": "从西门子系统获取设备运行数据，实现数据驱动的设备管理",
+        "priority": "should-have",
+        "source": "profile-inference",
+        "confidence": "low",
+        "status": "active",
+        "acceptanceCriteria": ["支持标准接口对接", "支持数据实时同步", "支持数据清洗转换"]
+      },
+      {
+        "id": "N007",
+        "category": "移动应用",
+        "title": "移动端巡检与报修",
+        "description": "支持手机/平板进行设备巡检、故障报修、工单处理",
+        "priority": "nice-to-have",
+        "source": "sales-observation",
+        "confidence": "low",
+        "status": "active",
+        "acceptanceCriteria": ["支持离线操作", "支持扫码定位", "支持拍照附件"]
+      },
+      {
+        "id": "N008",
+        "category": "报表分析",
+        "title": "设备管理分析报表",
+        "description": "设备OEE分析、故障分析、维护成本分析、备件消耗分析",
+        "priority": "should-have",
+        "source": "profile-inference",
+        "confidence": "medium",
+        "status": "active",
+        "acceptanceCriteria": ["支持自定义报表", "支持数据可视化", "支持导出"]
+      }
+    ],
 
-    "users": [],
+    "users": [
+      {
+        "role": "设备管理员",
+        "responsibilities": ["设备台账维护", "维护计划制定", "报表分析"],
+        "painPoints": ["数据分散难以统计", "手工工作量大"],
+        "frequency": "每日"
+      },
+      {
+        "role": "维修工程师",
+        "responsibilities": ["故障处理", "预防性维护执行"],
+        "painPoints": ["维修经验难以查询", "工单流转不透明"],
+        "frequency": "每日"
+      },
+      {
+        "role": "设备操作工",
+        "responsibilities": ["日常点检", "故障报修"],
+        "painPoints": ["报修流程繁琐", "进度无法追踪"],
+        "frequency": "每班次"
+      },
+      {
+        "role": "采购/仓储",
+        "responsibilities": ["备件采购", "库存管理"],
+        "painPoints": ["备件需求不明确", "库存积压与缺货并存"],
+        "frequency": "每周"
+      }
+    ],
 
     "scope": {
-      "inScope": [],
-      "outOfScope": [],
-      "futureScope": [],
-      "phases": [],
-      "priorityMatrix": []
+      "inScope": [
+        "设备台账管理",
+        "维护计划管理",
+        "维修工单管理",
+        "备品备件管理",
+        "设备报表分析"
+      ],
+      "outOfScope": [
+        "生产计划管理",
+        "质量管理",
+        "人力资源管理"
+      ],
+      "futureScope": [
+        "预测性维护（二期）",
+        "数字孪生（远期）"
+      ],
+      "phases": [
+        {
+          "phase": "一期",
+          "focus": "基础设备台账+工单管理",
+          "timeline": "待确认"
+        },
+        {
+          "phase": "二期",
+          "focus": "预测性维护+移动应用",
+          "timeline": "待确认"
+        }
+      ],
+      "priorityMatrix": [
+        { "category": "基础管理", "priority": "P0", "items": ["设备台账", "工单管理"] },
+        { "category": "维护优化", "priority": "P1", "items": ["预防性维护", "备件管理"] },
+        { "category": "智能升级", "priority": "P2", "items": ["预测性维护", "移动应用"] }
+      ]
     },
 
     "constraints": {
@@ -72,29 +220,29 @@
         "total": "",
         "breakdown": [],
         "paymentTerms": "",
-        "flexibility": ""
+        "flexibility": "待确认"
       },
       "timeline": {
         "expectedStart": "",
         "expectedGoLive": "",
         "hardDeadline": "",
         "reason": "",
-        "flexibility": ""
+        "flexibility": "待确认"
       },
       "resources": {
-        "clientTeam": [],
+        "clientTeam": ["待确认"],
         "availability": "",
         "constraints": []
       },
       "technical": {
-        "existingInfrastructure": [],
+        "existingInfrastructure": ["西门子数控系统"],
         "mandatoryTech": [],
         "prohibitedTech": [],
         "networkConstraints": [],
-        "deploymentConstraints": []
+        "deploymentConstraints": ["需兼容现有IT架构"]
       },
       "organizational": {
-        "approvalProcess": "",
+        "approvalProcess": "技术部门提出需求→生产/质量部门会签→采购部门评估→高层审批决策",
         "changeManagement": "",
         "vendorPolicies": [],
         "complianceRequirements": []
@@ -102,49 +250,109 @@
     },
 
     "successCriteria": {
-      "businessCriteria": [],
-      "technicalCriteria": [],
-      "userCriteria": [],
-      "projectCriteria": [],
+      "businessCriteria": [
+        "设备意外停机时间降低20%以上",
+        "预防性维护覆盖率提升至80%",
+        "备件库存周转率提升"
+      ],
+      "technicalCriteria": [
+        "系统可用率≥99.5%",
+        "工单响应时间缩短50%",
+        "设备数据准确率≥99%"
+      ],
+      "userCriteria": [
+        "用户上手时间≤1天",
+        "移动端功能使用率≥60%",
+        "用户满意度≥80%"
+      ],
+      "projectCriteria": [
+        "按期上线",
+        "数据迁移完整准确",
+        "关键用户培训完成"
+      ],
       "roiExpectation": {
-        "expectedBenefits": [],
-        "paybackPeriod": "",
-        "quantifiableMetrics": []
+        "expectedBenefits": ["减少停机损失", "降低维护成本", "延长设备寿命"],
+        "paybackPeriod": "待测算",
+        "quantifiableMetrics": ["设备OEE", "MTBF", "MTTR", "备件周转率"]
       }
     },
 
     "risksAndAssumptions": {
-      "risks": [],
-      "assumptions": [],
-      "dependencies": []
+      "risks": [
+        { "risk": "与西门子系统集成复杂度超预期", "impact": "中", "mitigation": "提前进行技术验证" },
+        { "risk": "用户对新系统接受度低", "impact": "中", "mitigation": "加强培训与试点推广" },
+        { "risk": "历史数据整理工作量巨大", "impact": "低", "mitigation": "分批迁移，先上线后完善" }
+      ],
+      "assumptions": [
+        "客户有明确的数字化转型预算支持",
+        "现有设备具备基础的数据采集能力",
+        "客户IT部门能够配合系统集成工作"
+      ],
+      "dependencies": [
+        "明确项目负责人和关键用户",
+        "现有设备清单和技术资料完整",
+        "网络基础设施满足系统运行要求"
+      ]
     },
 
     "solutionDirection": {
-      "overallApproach": "",
+      "overallApproach": "采用成熟EAM产品+适度定制，优先落地基础功能，为后续智能化升级预留接口",
       "recommendedApproach": {
-        "type": "",
-        "rationale": "",
-        "alternatives": []
+        "type": "成熟商业软件+定制开发",
+        "rationale": "降低实施风险，加快上线周期，依托成熟产品最佳实践",
+        "alternatives": [
+          "完全自主开发（周期长，风险高）",
+          "SaaS订阅（需评估数据安全与网络要求）"
+        ]
       },
       "technicalDirection": {
-        "architecture": "",
-        "deployment": "",
-        "techStack": []
+        "architecture": "B/S架构，支持移动端",
+        "deployment": "私有化部署",
+        "techStack": ["待选型"]
       },
       "implementationStrategy": {
-        "approach": "",
-        "pilotScope": "",
-        "rolloutPlan": ""
+        "approach": "试点先行，快速迭代",
+        "pilotScope": "总装车间关键设备",
+        "rolloutPlan": "试点→评估→全面推广"
       },
-      "nextSteps": []
+      "nextSteps": [
+        "确认项目预算和时间节点",
+        "明确项目决策链和关键干系人",
+        "收集详细设备清单和技术资料",
+        "了解竞对情况"
+      ]
     },
 
-    "pendingQuestions": [],
+    "pendingQuestions": [
+      { "id": "Q001", "question": "项目预算范围是多少？", "priority": "高", "category": "商务" },
+      { "id": "Q002", "question": "期望上线时间节点？", "priority": "高", "category": "时间" },
+      { "id": "Q003", "question": "项目决策人和关键干系人是谁？", "priority": "高", "category": "决策" },
+      { "id": "Q004", "question": "是否有竞对在跟进？进展如何？", "priority": "高", "category": "竞对" },
+      { "id": "Q005", "question": "设备数量和类型分布？", "priority": "中", "category": "技术" },
+      { "id": "Q006", "question": "是否有现成的设备台账数据？", "priority": "中", "category": "数据" },
+      { "id": "Q007", "question": "与西门子系统的对接要求？", "priority": "中", "category": "技术" },
+      { "id": "Q008", "question": "是否需要移动端？支持哪些平台？", "priority": "低", "category": "功能" }
+    ],
 
     "completionRate": {
-      "overall": 0,
-      "byCategory": {},
-      "blockers": []
+      "overall": 30,
+      "byCategory": {
+        "业务背景": 60,
+        "功能需求": 40,
+        "用户角色": 50,
+        "项目范围": 50,
+        "约束条件": 10,
+        "成功标准": 30,
+        "商务条件": 0
+      },
+      "blockers": ["预算未确认", "时间未确认", "决策人未明确", "竞对情况未知"]
     }
+  },
+
+  "metadata": {
+    "createdAt": "2026-03-25T00:00:00.000Z",
+    "updatedAt": "2026-03-25T00:00:00.000Z",
+    "createdBy": "AI",
+    "version": "1.0"
   }
 }
